@@ -3,8 +3,6 @@
 // AUTHOR : Gisele Miranda 
 // CREATE DATE : 2023 - 02 - 03
 // PURPOSE : LCI Microscopy course - Image Analysis workshop - Noise handling
-// NOTES : Required plugins - MorphoLibJ (https://imagej.net/MorphoLibJ)
-// 							- Multi Otsu Threshold (https://imagej.net/plugins/multi-otsu-threshold)
 // ===============================
 
 
