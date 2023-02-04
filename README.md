@@ -9,8 +9,8 @@ Welcome to the image analysis workshop organized by the Live Cell Imaging facili
 
 ## :alarm_clock: Schedule
 
-**10:00-11:00** Correction of uneven illumination\
-**11:10-12:00** Handling noise\
-**12:00-13.00** Lunch break\
-**13:00-14:20** Image artifacts that cannot be fixed\
-**14:20-15:00** Show-case image analysis tasks using the students images\
+* **10:00-11:00** Correction of uneven illumination\
+* **11:10-12:00** Handling noise\
+* **12:00-13.00** Lunch break\
+* **13:00-14:20** Image artifacts that cannot be fixed\
+* **14:20-15:00** Show-case image analysis tasks using the students images\
