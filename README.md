@@ -1,4 +1,4 @@
-# :microscope: Image Analysis Workshop 2023
+# :microscope: LCI Image Analysis Workshop 2023
 
 Welcome to the image analysis workshop organized by the Live Cell Imaging facility at the Karolinska Institute! During this workshop you will:
 
@@ -7,6 +7,10 @@ Welcome to the image analysis workshop organized by the Live Cell Imaging facili
 - [x] Understand which image artefacts cannot be corrected by image analysis, e.g., saturation, underexposure, bleedthrough
 
 In order to follow-up the examples presented in this workshop, download the code available in this GitHub page (you can do that by clicking on the green buttom above). In addition, you also have to download Fiji from the following [link](https://fiji.sc/). The installation of additional required plugins will be detailed in the next sessions.
+
+:ear: Tip: To open a script in Fiji, go to "Plugins->Macros->Edit...". Then browse the code to be used in each session.
+
+:people_holding_hands: Group work: For each activity you will be radomly assigned to breakout rooms to work in groups. Results should be reported in the following shared document.
 
 ## :alarm_clock: Schedule
 
@@ -22,8 +26,26 @@ In order to follow-up the examples presented in this workshop, download the code
 
 Uneven illumation can be due to different factors, e.g., microscope settings, samples artifacts (amples that are not flat), etc. 
 
-## 2) How to handle noise
+## 2) Handling noise
 
-Open the 
+Each group should take a specific reference image and generate the output measures using the script "Noise.ijm" script.
 
-## 3) Image artifacts that cannot be fixed
+Images to be used in session are located in "../images/noise/"
+
+Instructions to run the script and generate results: 
+* Open the image of interest in Fiji;
+* Open and run the scrip "Noise.ijm";
+* Copy the measures from Summary table to the shared file 
+* Inspect the Results table and the Roi Manager tool
+* Take some time to analyze the script!
+
+*Testing the Median filter*: uncomment line #20 of the script (by removing the "//" at beggining of the line), the re-run the script for the same reference image. Copy the measures to the shared file and compare both results (with and without median filter).
+
+:bulb: What happens as the size of the averaging filter increases?
+
+:bulb: What happens as if we don't use the median filter 
+
+
+## 3) Image artifacts that cannot be fixed by image analysis
+
+
