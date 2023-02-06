@@ -47,9 +47,28 @@ run("Median...", "radius=4");
 
 :bulb: What happens as the size of the averaging filter increases?
 
-:bulb: What happens as if we don't use the median filter 
+:bulb: What happens if we don't use the median filter?
 
 
-## 3) Image artifacts that cannot be fixed by image analysis
+## 3) Image artifacts
 
+Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. You will work in groups to investigate how each artifact can affect image quantification.
+
+-> Images to be used in this session are located in "../images/image_artifacts/"
+
+-> Instructions to run the script: 
+* Open the image of interest in Fiji;
+* Open and run the script "ImageArtifacts.ijm";
+* From the "Log" window copy the values of the "total segmented area" and "average intensity" of each channel (green and red)
+* Take some time to analyze the script!
+
+Wait for all the groups to complete the task and summarize results in the shared file. Then discuss:
+
+:bulb: How are the measures affected by each artifact?
+
+:bulb: How to avoid such artifacts during acquisition?
+
+## 4) Extra task: Nuclei & Cell Segmentation
+
+The segmentation of nuclei and cells are the starting point of several image analysis tasks in microscopy.
 
