@@ -17,7 +17,7 @@ run("Subtract Background...", "rolling=70");
 // adjust brightness & contrast for better visualization
 run("Enhance Contrast", "saturated=0.35");
 // filter to reduce noise
-run("Median...", "radius=4");
+//run("Median...", "radius=4");
 // apply Otsu threshold
 setAutoThreshold("Otsu dark");
 setOption("BlackBackground", true);
