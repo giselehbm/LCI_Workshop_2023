@@ -29,7 +29,9 @@ Uneven illumation can be due to different factors, e.g., microscope settings, sa
 ## 2) Handling noise
 
 Each group should take a specific reference image and generate the output measures using the script "Noise.ijm" script.
+
 -> Images to be used in this session are located in "../images/noise/"
+
 -> Instructions to run the script and generate the measures: 
 * Open the image of interest in Fiji;
 * Open and run the script "Noise.ijm";
@@ -37,7 +39,11 @@ Each group should take a specific reference image and generate the output measur
 * Inspect the Results table and the Roi Manager tool
 * Take some time to analyze the script!
 
-**Testing the Median filter**: uncomment line #20 of the script (by removing the "//" at beggining of the line), then re-run the script for the same reference image. Copy the measures to the shared file and compare the new measures with the previous values.
+**Testing the Median filter**: uncomment line #20 of the script (by removing the "//" at beggining of the line, see below). Then re-run the script for the same reference image. Copy the measures to the shared file and compare the new measures with the previous values.
+
+```
+run("Median...", "radius=4");
+```
 
 :bulb: What happens as the size of the averaging filter increases?
 
