@@ -58,7 +58,7 @@ Some image artifacts cannot be fixed by image analysis and may compromise intens
 
 ![](images/bleedtrough.png?raw=true "Screenshot")
 
-<img src="images/saturation_vs_underexposure.png" height=90% width=90% ></a>
+<img src="images/saturation_vs_underexposure.png" height=88% width=88% ></a>
 
 You will work in groups to investigate how each artifact can affect image quantification.
 
