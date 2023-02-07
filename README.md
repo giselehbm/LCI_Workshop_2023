@@ -56,19 +56,19 @@ run("Median...", "radius=4");
 
 Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. Examples can be seen in the images below, such as, bleedtrough, saturation, underexposure and soft focus.
 
-### 3.1) Bleedtrough
+#### Bleedtrough
 
 ![](images/bleedtrough.png?raw=true "Screenshot")
 
-### 3.2) Saturation & Underexposure
+#### Saturation & Underexposure
 
 <img src="images/saturation_vs_underexposure.png" height=89% width=89% ></a>
 
-### 3.3) Soft focus
+#### Soft focus
 
 <img src="images/out_focus.png" height=57% width=57% ></a>
 
-### 3.4) Hands-on exercise
+#### Hands-on exercise
 
 You will work in groups to investigate how each artifact can affect image quantification.
 
@@ -86,7 +86,7 @@ Wait for all the groups to complete the task and summarize results in the shared
 
 :bulb: How to avoid such artifacts during acquisition?
 
-## 4) Extra task: Nuclei & Cell Segmentation
+## 4) Nuclei & Cell Segmentation
 
 The segmentation of nuclei and cells are the starting point of several image analysis tasks in microscopy.
 
