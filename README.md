@@ -3,8 +3,8 @@
 Welcome to the image analysis workshop organized by the Live Cell Imaging facility at the Karolinska Institute! During this workshop you will:
 
 - [x] See typical examples of what can be done with image analysis and the limitations of each example
-- [x] Understand which image artefacts can be corrected by image analysis in some cases but are easier to correct before acquisition, e.g., uneven illumination
-- [x] Understand which image artefacts cannot be corrected by image analysis, e.g., saturation, underexposure, bleedthrough
+- [x] Understand which image artifacts can be corrected by image analysis in some cases but are easier to correct before acquisition, e.g., uneven illumination
+- [x] Understand which image artifacts cannot be corrected by image analysis, e.g., saturation, underexposure, bleedthrough
 
 In order to follow-up the examples presented in this workshop, download the code available in this GitHub page (you can do that by clicking on the green buttom above). In addition, you also have to download Fiji from the following [link](https://fiji.sc/). The installation of additional required plugins will be detailed in the next sessions.
 
@@ -26,9 +26,13 @@ In order to follow-up the examples presented in this workshop, download the code
 
 ## 1) Uneven illumination - how to correct
 
-Uneven illumation can be due to different factors, e.g., microscope settings, samples artifacts (amples that are not flat), etc. 
+Uneven illumation can be due to different factors, e.g., microscope settings, sample artifacts (samples that are not flat), etc. 
 
 ## 2) Handling noise
+
+Noise....
+
+![](images/averaging_filter.png?raw=true "Screenshot")
 
 Each group should take a specific reference image and generate the output measures using the script "Noise.ijm" script.
 
@@ -66,7 +70,7 @@ Some image artifacts cannot be fixed by image analysis and may compromise intens
 
 ### Soft focus
 
-<img src="images/out_focus.png" height=57% width=57% ></a>
+<img src="images/out_focus.png" height=58% width=58% ></a>
 
 ### Hands-on exercise
 
