@@ -58,6 +58,8 @@ Some image artifacts cannot be fixed by image analysis and may compromise intens
 
 ![](images/bleedtrough.png?raw=true "Screenshot")
 
+![](images/saturation_vs_underexposure.png?raw=true "Screenshot")
+
 You will work in groups to investigate how each artifact can affect image quantification.
 
 -> Images to be used in this session are located in "../images/image_artifacts/"
