@@ -66,7 +66,7 @@ Some image artifacts cannot be fixed by image analysis and may compromise intens
 
 ### 3.3) Soft focus
 
-<img src="images/out_focus.png" height=60% width=60% ></a>
+<img src="images/out_focus.png" height=57% width=57% ></a>
 
 ### 3.4) Hands-on exercise
 
