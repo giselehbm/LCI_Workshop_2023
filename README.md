@@ -66,6 +66,8 @@ Some image artifacts cannot be fixed by image analysis and may compromise intens
 
 ### 3.3) Soft focus
 
+### 3.4) Hands-on exercise
+
 You will work in groups to investigate how each artifact can affect image quantification.
 
 -> Images to be used in this session are located in "../images/image_artifacts/"
