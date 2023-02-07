@@ -56,9 +56,15 @@ run("Median...", "radius=4");
 
 Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. Examples can be seen in the images below, such as, bleedtrough, saturation, underexposure and soft focus.
 
+### 3.1) Bleedtrough
+
 ![](images/bleedtrough.png?raw=true "Screenshot")
 
+### 3.2) Saturation & Underexposure
+
 <img src="images/saturation_vs_underexposure.png" height=89% width=89% ></a>
+
+### 3.3) Soft focus
 
 You will work in groups to investigate how each artifact can affect image quantification.
 
