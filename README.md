@@ -8,7 +8,9 @@ Welcome to the image analysis workshop organized by the Live Cell Imaging facili
 
 In order to follow-up the examples presented in this workshop, download the code available in this GitHub page (you can do that by clicking on the green buttom above). In addition, you also have to download Fiji from the following [link](https://fiji.sc/). The installation of additional required plugins will be detailed in the next sessions.
 
-:bookmark: **Tip**: To open a script in Fiji, go to "Plugins->Macros->Edit...". Then browse the code to be used in each session.
+:bookmark: **Tip**: To open a script in Fiji, go to "File->Open". Then browse the image of interest. If the Bio-Formats plugin interface appears, then check the import options and press "OK"
+
+:bookmark: **Tip**: You can open an image in Fiji by dragging and droping a file in the main interface or through "Plugins->Macros->Edit...". Then browse the code to be used in each session.
 
 :people_holding_hands: **Group work**: For each activity you will be radomly assigned to breakout rooms to work in groups. Results should be reported in the following shared document.
 
@@ -52,7 +54,11 @@ run("Median...", "radius=4");
 
 ## 3) Image artifacts
 
-Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. You will work in groups to investigate how each artifact can affect image quantification.
+Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. Examples can be seen in the images below, such as, bleedtrough, saturation, underexposure and soft focus.
+
+![](images/bleedtrough.png?raw=true "Screenshot")
+
+You will work in groups to investigate how each artifact can affect image quantification.
 
 -> Images to be used in this session are located in "../images/image_artifacts/"
 
