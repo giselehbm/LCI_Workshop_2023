@@ -26,20 +26,39 @@ In order to follow-up the examples presented in this workshop, download the code
 
 ## 1) Uneven illumination - how to correct
 
-Uneven illumation can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the centre of the optical axis to the edges). Uneven illumination can cause discontinuities in stitched images (tiles), background bleaching in time-lapse fluorescent images and compromise downstream analysis. 
+Uneven illumation can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the centre of the optical axis to the edges). Uneven illumination can cause discontinuities in whole slide images, background bleaching in time-lapse fluorescent images and compromise downstream analysis. 
 
-In this workshop we will test two methods to correct such artifacts caused by uneven illumination.
+In this workshop we will try two methods to correct such artifacts caused by uneven illumination.
 * [Rolling-ball](https://imagejdocu.list.lu/gui/process/subtract_background) algorithm
 * [BaSiC](https://github.com/marrlab/BaSiC#imagejfiji-plugin) plugin (click on the link to follow installation instructions)
 
 -> Images to be used in this session are located in "../uneven_illumination/tiles/"
 
--> Instructions to run the script and generate the measures: 
-* Open the image of interest in Fiji;
-* Open and run the script "Noise.ijm";
-* Copy the measures from the "Summary" table to the shared file 
-* Inspect the Results table and the Roi Manager tool
-* Take some time to analyze the script!
+Instructions for each group:
+
+**Group 1:** Illumination correction via rolling ball algorithm
+* Open the image of interest
+* Go to "Process->Subtract Background..."
+* Choose the radius of the rolling ball algorithm and press OK
+
+**Groups 2 and 3:** Illumination correction via BaSiC plugin
+* Install the BaSiC plugin via Fiji update sites (instructions above)
+* Open the script "Illumination_Basic.ijm";
+* Updage parameter values in lines 17, 19 and 20
+```
+// choose overlap
+overlap = 1;
+// choose grid size
+grid_size_x = 5;
+grid_size_y = 3;
+```
+* Run the script (the corrected image will be saved in the input folder)
+
+**Group 4:** 
+
+Comapre the uncorrected and corrected images and discuss how (*or if*) the corrected image was improved.
+
+Division of group
 
 
 ## 2) Handling noise
