@@ -26,7 +26,21 @@ In order to follow-up the examples presented in this workshop, download the code
 
 ## 1) Uneven illumination - how to correct
 
-Uneven illumation can be due to different factors, e.g., microscope settings, sample artifacts (samples that are not flat), etc. 
+Uneven illumation can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the centre of the optical axis to the edges). Uneven illumination can cause discontinuities in stitched images (tiles), background bleaching in time-lapse fluorescent images and compromise downstream analysis. 
+
+In this workshop we will test two methods to correct such artifacts caused by uneven illumination.
+* [Rolling-ball](https://imagejdocu.list.lu/gui/process/subtract_background) algorithm
+* [BaSiC](https://github.com/marrlab/BaSiC#imagejfiji-plugin) plugin (click on the link to follow installation instructions)
+
+-> Images to be used in this session are located in "../uneven_illumination/tiles/"
+
+-> Instructions to run the script and generate the measures: 
+* Open the image of interest in Fiji;
+* Open and run the script "Noise.ijm";
+* Copy the measures from the "Summary" table to the shared file 
+* Inspect the Results table and the Roi Manager tool
+* Take some time to analyze the script!
+
 
 ## 2) Handling noise
 
