@@ -3,24 +3,24 @@
 Welcome to the image analysis workshop organized by the Live Cell Imaging facility at the Karolinska Institute! During this workshop you will:
 
 - [x] See typical examples of what can be done with image analysis and the limitations of each example
-- [x] Understand which image artifacts can be corrected by image analysis in some cases but are easier to correct before acquisition, e.g., uneven illumination
-- [x] Understand which image artifacts cannot be corrected by image analysis, e.g., saturation, underexposure, bleedthrough
+- [x] Understand which image artifacts can be corrected by image analysis in some cases but are easier to correct before acquisition, e.g., uneven illumination, noise
+- [x] Understand which image artifacts cannot be corrected by image analysis, e.g., saturation, under exposure, bleedthrough
 
 In order to follow-up the examples presented in this workshop, download the code available in this GitHub page (you can do that by clicking on the green buttom above). In addition, you also have to download Fiji from the following [link](https://fiji.sc/). The installation of additional required plugins will be detailed in the next sessions.
 
 :bookmark: **Tip**: To open an image in Fiji, go to "File->Open". Then browse the image of interest. If the Bio-Formats plugin interface appears, check the import options and press "OK"
 
-:bookmark: **Tip**: You can a script in Fiji by dragging and droping a file in the main interface or through "Plugins->Macros->Edit...". Then browse the code to be used in each session.
+:bookmark: **Tip**: You can open a script in Fiji by dragging and droping a file in the main interface or through "Plugins->Macros->Edit...". Then browse the code to be used in each session.
 
 :people_holding_hands: **Group work**: For each activity you will be radomly assigned to breakout rooms to work in groups. Results should be reported in the following shared document.
 
 ## :alarm_clock: Schedule
 
-* **10:00-11:00** Correction of uneven illumination
-* **11:10-12:00** Handling noise
-* **12:00-13.00** Lunch break
-* **13:00-14:20** Image artifacts that cannot be fixed
-* **14:20-15:00** Show-case image analysis tasks using the students images
+* **10:10-11:10** Correction of uneven illumination
+* **11:15-12:10** Handling noise
+* **12:10-13.10** Lunch break
+* **13:10-14:10** Image artifacts that cannot be fixed
+* **14:15-15:10** Show-case image analysis tasks using the students images
 
 ## :muscle: Let's start!
 
