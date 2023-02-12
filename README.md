@@ -1,4 +1,5 @@
-# :microscope: LCI Microscopy Course: Image Analysis Workshop 2023
+# :microscope: LCI Microscopy Course: 
+## Image Analysis Workshop 2023
 
 Welcome to the image analysis workshop organized by the Bioimage Informatics facility & the Live Cell Imaging facility! During this workshop you will:
 
