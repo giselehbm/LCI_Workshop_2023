@@ -101,7 +101,7 @@ Each group should take a specific reference image and generate the output measur
 
 :arrow_right: Images to be used in this session are located in "../images/noise/"
 
-:people_holding_hands: Group assignment
+:people_holding_hands: Group assignment:
 * Group 1: images "Nuclei_no_avg.nd2" and "Tissue_no_avg.nd2"
 * Group 2: images "Nuclei_avg_2x.nd2" and "Tissue_2x_avg.nd2"
 * Group 3: images "Nuclei_avg_4x.nd2" and "Tissue_4x_avg.nd2"
@@ -129,15 +129,15 @@ run("Median...", "radius=4");
 
 Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. Examples can be seen in the images below, such as, bleedtrough, saturation, under exposure and soft focus.
 
-### Bleedtrough
+### 3.1) Bleedtrough
 
 ![](images/bleedtrough.png?raw=true "Screenshot")
 
-### Saturation & Under exposure
+### 3.2) Saturation & Under exposure
 
 <img src="images/saturation_vs_underexposure.png" height=89% width=89% ></a>
 
-### Soft focus
+### 3.3) Soft focus
 
 <img src="images/out_focus.png" height=58% width=58% ></a>
 
@@ -145,9 +145,16 @@ Some image artifacts cannot be fixed by image analysis and may compromise intens
 
 You will work in groups to investigate how each artifact can affect image quantification.
 
--> Images to be used in this session are located in "../images/image_artifacts/"
+:arrow_right: Images to be used in this session are located in "../images/image_artifacts/"
 
--> Instructions to run the script: 
+:people_holding_hands: Group assignment:
+* Group 1: image "../images/image_artifacts/Seq no sat.nd2.nd2"
+* Group 2: image "../images/image_artifacts/simultaneous.nd2"
+* Group 3: image "../images/image_artifacts/seq_saturated.nd2"
+* Group 4: image "../images/image_artifacts/seq_undexposed.nd2"
+* Group 5: image "../images/image_artifacts/soft_focus.nd2"
+
+:arrow_right: Instructions to run the script: 
 * Open the image of interest in Fiji;
 * Open and run the script "ImageArtifacts.ijm";
 * From the "Log" window copy the values of the "total segmented area" and "average intensity" of each channel (green and red)
