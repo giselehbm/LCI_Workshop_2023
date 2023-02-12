@@ -101,7 +101,7 @@ Each group should take a specific reference image and generate the output measur
 
 :arrow_right: Images to be used in this session are located in "../images/noise/"
 
-:arrow_right: Group assignment
+:people_holding_hands: Group assignment
 * Group 1: images "Nuclei_no_avg.nd2" and "Tissue_no_avg.nd2"
 * Group 2: images "Nuclei_avg_2x.nd2" and "Tissue_2x_avg.nd2"
 * Group 3: images "Nuclei_avg_4x.nd2" and "Tissue_4x_avg.nd2"
