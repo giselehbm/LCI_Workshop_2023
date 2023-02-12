@@ -28,7 +28,7 @@ print("Total segmented area in the red channel: " + measuresC2[0]);
 print("Average intensity of the red channel: " + measuresC2[1]);
 
 /** 
- * function that performs segmentation and return measures 
+ * function that performs segmentation and returns measures 
  */
 function segment(img) {
 	// duplicate image to create mask
