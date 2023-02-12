@@ -81,7 +81,7 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 * Open the image of interest in Fiji (from folder "../images/illumination_correction/uneven_focus/");
 * Inspect the z-stack. What is wrong?
 * Create a copy of the reference stack ("Image->Duplicate")
-* Segment via thresholding ("Image->Adjust->Threshold"). Keep the resulting segmented stack.
+* Segment via thresholding ("Image->Adjust->Threshold..."). Keep the resulting segmented stack.
 * Select the original stack and apply a maximum intensity projection (MIP), via "Image->Stacks->Z project..."
 * Create two copies of the projected image. 
 	- Apply the rolling ball algorithm ("Process->Subtract Background...") in one of them
@@ -168,6 +168,17 @@ Wait for all groups to complete the task and add results in the shared file. The
 
 ## 4) Nuclei & Cell Segmentation
 
-The segmentation of nuclei and cells are the starting point of several image analysis tasks in microscopy. Let's try 
+The segmentation of nuclei and cells is the starting point of several image analysis tasks in microscopy. In this assignment we will use Fiji to create a pipeline for the segmentation of cells and nuclei. Be inspired by the image below! 
+
+You can choose to work with your own images, acquired during the LCI Microscopy course, or, you can work with the images located in the folder "../images/noise/". 
 
 ![](images/cell_nuclei_segmentation.png?raw=true "Screenshot")
+
+:arrow_right: Notes & Tips :bookmark:
+* Test the different thresholding algorithms in Fiji ("Image->Adjust->Threshold...");
+* Remember that the background subtraction can improve the segmentation results;
+* Pre-processing: you can find several convolution filters in "Process->Filters";
+* If thresholding does not perform well, you can try [StarDist](https://fiji.sc/)
+	- Available as a plugin for FIJI. Two trained models: fluorescent nuclei and H&E stained images
+
+
