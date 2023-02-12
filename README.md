@@ -181,6 +181,6 @@ You can choose to work with your own images, acquired during the LCI Microscopy 
 * Remember to create a copy of the original image in case you want to quantify pixel intensity
 * If thresholding does not perform well, you can try [StarDist](https://github.com/stardist/stardist-imagej)
 	- Available as a plugin for FIJI. Two trained models: fluorescent nuclei and H&E stained images
-* Advanced: Activate the macro recording function "Plugins->Macros->Record..." in Fiji to save all the functions and plugins that you use. Then try to create your own script!
+* Activate the macro recording function "Plugins->Macros->Record..." in Fiji to save all the functions and plugins that you use. Then try to create your own script!
 
 
