@@ -41,11 +41,11 @@ Wait to be assigned to one of the breakout rooms and then follow the instruction
 * Go to "Process->Subtract Background..."
 * Choose the radius of the rolling ball algorithm and press OK
 
-You can repeat these steps for the **stitched images**. You can also try to correct individual tiles ("tiles" folder). Try different values of the radius parameter.
+Repeat these steps for tthe files in the **stitched** folder. You can also try to correct individual tiles ("tiles" folder). Try different values of the radius parameter.
 
 :bulb: What happens as the size of radius increases?
 
-:bulb: What happens as the overlapping increases?
+:bulb: What happens as the overlap increases?
 
 **Groups 2 and 3:** Illumination correction via BaSiC plugin
 * Install the BaSiC plugin via Fiji update sites (instructions above)
