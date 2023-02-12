@@ -65,20 +65,31 @@ You can repeat these steps for the **stitched images**. You can also try to corr
 	grid_size_y = 6;
 	file_name = "C3-BrainSection";
 	```
-* Press the "Run buttom". A Dialog window will appear and you should browse the folder named "uncorrected" inside the reference folder.
+* Press the "Run buttom". A Dialog window will appear and you should browse the folder named "uncorrected" inside the reference folder ("../images/illumination_correction/tiles/...").
 	- **Group 2:** run the script for "img2" with different overlap values ("img2_1pc", "img2_5pc" and "img2_10pc")
 	- **Group 3:** run the script for "img2_10pc" and "WSI_Brain"
 
 **Note:** Corrected stitched images are saved inside the reference folder
 
-:bulb: Comapre the uncorrected va corrected images and discuss how (*or if*) the corrected image was improved.
+:bulb: Comapre the uncorrected *vs* corrected images and discuss how the corrected image was improved (*or not*) for each example.
 
 :bulb: What happens as the overlapping increases? (Group 2)
 
 :bulb: What happens as the number of tiles increases? (Group 3)
 
-**Group 4:** 
+**Group 4:** Uneven focus on z-stacks
+* Open the image of interest in Fiji (from folder "../images/illumination_correction/uneven_focus/");
+* Inspect the z-stack. What is wrong?
+* Create a copy of the reference stack ("Image->Duplicate")
+* Segment via thresholding ("Image->Adjust->Threshold"). Keep resulting segmented stack.
+* Select the original stack and apply a maximum intensity projection (MIP), via "Image->Stacks->Z project..."
+* Create two copies of the projected image. 
+	- Apply the rolling ball algorithm ("Process->Subtract Background...") in one of them
+* Segment both copies via thresholding
 
+:bulb: Compare the segmentation results of 1) the z-stack, 2) the MIP, and 3) the corrected MIP.
+
+**Note:** To help your analysis, you can compare the intensity profiles of the reference images: Draw a straight line from left to right in the reference image, then go to "Analyze->Plot Profile"
 
 ## 2) Handling noise
 
@@ -110,13 +121,13 @@ run("Median...", "radius=4");
 
 ## 3) Image artifacts
 
-Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. Examples can be seen in the images below, such as, bleedtrough, saturation, underexposure and soft focus.
+Some image artifacts cannot be fixed by image analysis and may compromise intensity and shape measurements. Examples can be seen in the images below, such as, bleedtrough, saturation, under exposure and soft focus.
 
 ### Bleedtrough
 
 ![](images/bleedtrough.png?raw=true "Screenshot")
 
-### Saturation & Underexposure
+### Saturation & Under exposure
 
 <img src="images/saturation_vs_underexposure.png" height=89% width=89% ></a>
 
