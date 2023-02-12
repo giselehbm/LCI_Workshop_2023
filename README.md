@@ -41,7 +41,7 @@ Wait to be assigned to one of the breakout rooms and then follow the instruction
 * Go to "Process->Subtract Background..."
 * Choose the radius of the rolling ball algorithm and press OK
 
-Repeat these steps for tthe files in the **stitched** folder. You can also try to correct individual tiles ("tiles" folder). Try different values of the radius parameter.
+Repeat these steps for the files in the **"stitched"** folder. You can also try to correct individual tiles ("tiles" folder). Try different values of the radius parameter.
 
 :bulb: What happens as the size of radius increases?
 
