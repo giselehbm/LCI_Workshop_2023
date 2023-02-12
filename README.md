@@ -32,7 +32,7 @@ Uneven illumination can cause discontinuities in whole slide images, background 
 * [Rolling-ball](https://imagejdocu.list.lu/gui/process/subtract_background) algorithm
 * [BaSiC](https://github.com/marrlab/BaSiC#imagejfiji-plugin) plugin (click on the link to follow installation instructions)
 
--> Images to be used in this session are located in "../images/illumination_correction/"
+:arrow_right: Images to be used in this session are located in "../images/illumination_correction/"
 
 Wait to be assigned to one of the breakout rooms and then follow the instructions corresponding to your group:
 
@@ -71,15 +71,13 @@ You can repeat these steps for the **stitched images**. You can also try to corr
 
 **Note:** Corrected stitched images are saved inside the reference folder
 
-:bulb: Inspect the results, compare the uncorrected vs corrected images.
-
-**Group 4:** 
-
-:bulb: Comapre the uncorrected and corrected images and discuss how (*or if*) the corrected image was improved.
+:bulb: Comapre the uncorrected va corrected images and discuss how (*or if*) the corrected image was improved.
 
 :bulb: What happens as the overlapping increases? (Group 2)
 
 :bulb: What happens as the number of tiles increases? (Group 3)
+
+**Group 4:** 
 
 
 ## 2) Handling noise
