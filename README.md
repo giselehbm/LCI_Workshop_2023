@@ -93,7 +93,7 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 
 ## 2) Handling noise
 
-Microscopic images may be affected by different types of noise: dark noise from sensors, shot noise (due to inherent nature of light), readout noise (due to amplification and conversion of the signal). There are different image processing techniques that can be used to denoise images. For this workshop, we will focus on convolution filters. The image below shows the effect of the averaging filter during acquisition.
+Microscopic images may be affected by different types of noise: dark noise from sensors, shot noise (due to inherent nature of light), readout noise (due to amplification and conversion of the signal). There are different image processing techniques that can be used to denoise images. In this workshop, we will focus on convolution filters. The image below shows the effect of the averaging filter during acquisition.
 
 ![](images/averaging_filter.png?raw=true "Screenshot")
 
@@ -178,6 +178,7 @@ You can choose to work with your own images, acquired during the LCI Microscopy 
 * Test the different thresholding algorithms in Fiji ("Image->Adjust->Threshold...");
 * Remember that the background subtraction can improve the segmentation results;
 * Pre-processing: you can find several convolution filters in "Process->Filters";
+* Remember to create a copy of the original image in case you want to quantify pixel intensity
 * If thresholding does not perform well, you can try [StarDist](https://github.com/stardist/stardist-imagej)
 	- Available as a plugin for FIJI. Two trained models: fluorescent nuclei and H&E stained images
 * Advanced: Activate the macro recording function "Plugins->Macros->Record..." in Fiji to save all the functions and plugins that you use. Then try to create your own script!
