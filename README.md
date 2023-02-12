@@ -34,7 +34,7 @@ Uneven illumination can cause discontinuities in whole slide images, background 
 
 :arrow_right: Images to be used in this session are located in "../images/illumination_correction/"
 
-Wait to be assigned to one of the breakout rooms and then follow the instructions corresponding to your group:
+**Wait to be assigned to one of the breakout rooms and then follow the instructions corresponding to your group:**
 
 **Group 1:** Illumination correction via rolling ball algorithm
 * Open the image of interest
