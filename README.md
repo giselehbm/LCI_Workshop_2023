@@ -93,15 +93,22 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 
 ## 2) Handling noise
 
-Noise....
+Microscopic images may be affected by different types of noise: dark noise from sensors, shot noise (due to inherent nature of light), readout noise (due to amplification and conversion of the signal). There are different image processing techniques that can be used to denoise images. For this workshop, we will focus on convolution filters. The image below shows the effect of the averaging filter during acquition.
 
 ![](images/averaging_filter.png?raw=true "Screenshot")
 
 Each group should take a specific reference image and generate the output measures using the script "Noise.ijm" script.
 
--> Images to be used in this session are located in "../images/noise/"
+:arrow_right: Images to be used in this session are located in "../images/noise/"
 
--> Instructions to run the script and generate the measures: 
+:arrow_right: Group assignment
+* Group 1: images "Nuclei_no_avg.nd2" and "Tissue_no_avg.nd2"
+* Group 2: images "Nuclei_avg_2x.nd2" and "Tissue_2x_avg.nd2"
+* Group 3: images "Nuclei_avg_4x.nd2" and "Tissue_4x_avg.nd2"
+* Group 4: images "Nuclei_avg_8x.nd2" and "Tissue_8x_avg.nd2"
+* Group 5: images "Nuclei_avg_16x.nd2" and "Tissue_16x_avg.nd2"
+
+:arrow_right: Instructions to run the script and generate the measures: 
 * Open the image of interest in Fiji;
 * Open and run the script "Noise.ijm";
 * Copy the measures from the "Summary" table to the shared file 
@@ -117,7 +124,6 @@ run("Median...", "radius=4");
 :bulb: What happens as the size of the averaging filter increases?
 
 :bulb: What happens if we don't use the median filter?
-
 
 ## 3) Image artifacts
 
