@@ -36,7 +36,7 @@ Uneven illumination can cause discontinuities in whole slide images, background 
 
 Wait to be assigned to one of the breakout rooms and then follow the instructions corresponding to your group:
 
-**Group 1:** Illumination correction via rolling ball algorithm
+:people_holding_hands: **Group 1:** Illumination correction via rolling ball algorithm
 * Open the image of interest
 * Go to "Process->Subtract Background..."
 * Choose the radius of the rolling ball algorithm and press OK
@@ -47,18 +47,18 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 
 :bulb: What happens as the overlap increases?
 
-**Groups 2 and 3:** Illumination correction via BaSiC plugin
+:people_holding_hands: **Groups 2 and 3:** Illumination correction via BaSiC plugin
 * Install the BaSiC plugin via Fiji update sites (instructions above)
 * Open the script "Illumination_Basic.ijm"
-* Updage parameter values (lines 12 to 15)
-	- For "img2_", set parameters to:
+* Update parameter values (lines 12 to 15)
+	- For "img2_" set parameters to:
 	```
 	overlap = 1; // choose 1, 5 or 10
 	grid_size_x = 5;
 	grid_size_y = 3;
 	file_name = "img";
 	```
-	- For "WSI_Brain", set parameters to:
+	- For "WSI_Brain" set parameters to:
 	```
 	overlap = 10;
 	grid_size_x = 9;
@@ -73,11 +73,11 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 
 :bulb: Comapre the uncorrected *vs* corrected images and discuss how the corrected image was improved (*or not*) for each example.
 
-:bulb: What happens as the overlapping increases? (Group 2)
+:bulb: What happens as the overlap increases? (Group 2)
 
 :bulb: What happens as the number of tiles increases? (Group 3)
 
-**Group 4:** Uneven focus on z-stacks
+:people_holding_hands: **Group 4:** Uneven focus on z-stacks
 * Open the image of interest in Fiji (from folder "../images/illumination_correction/uneven_focus/");
 * Inspect the z-stack. What is wrong?
 * Create a copy of the reference stack ("Image->Duplicate")
