@@ -170,3 +170,4 @@ Wait for all groups to complete the task and add results in the shared file. The
 
 The segmentation of nuclei and cells are the starting point of several image analysis tasks in microscopy. Let's try 
 
+![](images/averaging_filter.png?raw=true "Screenshot")
