@@ -1,4 +1,4 @@
-# :microscope: LCI Image Analysis Workshop 2023
+# :microscope: LCI Microscopy Course: Image Analysis Workshop 2023
 
 Welcome to the image analysis workshop organized by the Bioimage Informatics facility & the Live Cell Imaging facility! During this workshop you will:
 
@@ -20,13 +20,13 @@ In order to follow-up the examples presented in this workshop, download the code
 * **11:15-12:10** Handling noise
 * **12:10-13.10** Lunch break
 * **13:10-14:10** Image artifacts that cannot be fixed
-* **14:15-15:10** Show-case image analysis tasks using the students images
+* **14:15-15:10** Nuclei & Cell Segmentation
 
 ## :muscle: Let's start!
 
 ## 1) Uneven illumination - how to correct
 
-Uneven illumation can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the centre of the optical axis to the edges). 
+Uneven illumination can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the center of the optical axis to the edges). 
 
 Uneven illumination can cause discontinuities in whole slide images, background bleaching in time-lapse fluorescent images and compromise downstream analysis. In this workshop we will explore two algorithms that can be used to correct such artifacts.
 * [Rolling-ball](https://imagejdocu.list.lu/gui/process/subtract_background) algorithm
@@ -65,13 +65,13 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 	grid_size_y = 6;
 	file_name = "C3-BrainSection";
 	```
-* Press the "Run buttom". A Dialog window will appear and you should browse the folder named "uncorrected" inside the reference folder ("../images/illumination_correction/tiles/...").
+* Press the "Run button". A Dialog window will appear and you should browse the folder named "uncorrected" inside the reference folder ("../images/illumination_correction/tiles/...").
 	- **Group 2:** run the script for "img2" with different overlap values ("img2_1pc", "img2_5pc" and "img2_10pc")
 	- **Group 3:** run the script for "img2_10pc" and "WSI_Brain"
 
 **Note:** Corrected stitched images are saved inside the reference folder
 
-:bulb: Comapre the uncorrected *vs* corrected images and discuss how the corrected image was improved (*or not*) for each example.
+:bulb: Compare the uncorrected *vs* corrected images and discuss how the corrected image was improved (*or not*) for each example.
 
 :bulb: What happens as the overlap increases? (Group 2)
 
@@ -81,7 +81,7 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 * Open the image of interest in Fiji (from folder "../images/illumination_correction/uneven_focus/");
 * Inspect the z-stack. What is wrong?
 * Create a copy of the reference stack ("Image->Duplicate")
-* Segment via thresholding ("Image->Adjust->Threshold"). Keep resulting segmented stack.
+* Segment via thresholding ("Image->Adjust->Threshold"). Keep the resulting segmented stack.
 * Select the original stack and apply a maximum intensity projection (MIP), via "Image->Stacks->Z project..."
 * Create two copies of the projected image. 
 	- Apply the rolling ball algorithm ("Process->Subtract Background...") in one of them
@@ -93,7 +93,7 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 
 ## 2) Handling noise
 
-Microscopic images may be affected by different types of noise: dark noise from sensors, shot noise (due to inherent nature of light), readout noise (due to amplification and conversion of the signal). There are different image processing techniques that can be used to denoise images. For this workshop, we will focus on convolution filters. The image below shows the effect of the averaging filter during acquition.
+Microscopic images may be affected by different types of noise: dark noise from sensors, shot noise (due to inherent nature of light), readout noise (due to amplification and conversion of the signal). There are different image processing techniques that can be used to denoise images. For this workshop, we will focus on convolution filters. The image below shows the effect of the averaging filter during acquisition.
 
 ![](images/averaging_filter.png?raw=true "Screenshot")
 
@@ -115,7 +115,7 @@ Each group should take a specific reference image and generate the output measur
 * Inspect the Results table and the Roi Manager tool
 * Take some time to analyze the script!
 
-**Testing the Median filter**: uncomment line #20 of the script (by removing the "//" at beggining of the line, see below). Then re-run the script for the same reference image. Copy the measures to the shared file and compare the new measures with the previous values.
+**Testing the Median filter**: uncomment line #20 of the script (by removing the "//" at beginning of the line, see below). Then re-run the script for the same reference images. Copy the measures to the shared file and compare the new measures with the previous values.
 
 ```
 run("Median...", "radius=4");
@@ -148,7 +148,7 @@ You will work in groups to investigate how each artifact can affect image quanti
 :arrow_right: Images to be used in this session are located in "../images/image_artifacts/"
 
 :people_holding_hands: Group assignment:
-* Group 1: image "../images/image_artifacts/Seq no sat.nd2.nd2"
+* Group 1: image "../images/image_artifacts/seq_no_sat.nd2"
 * Group 2: image "../images/image_artifacts/simultaneous.nd2"
 * Group 3: image "../images/image_artifacts/seq_saturated.nd2"
 * Group 4: image "../images/image_artifacts/seq_undexposed.nd2"
@@ -160,7 +160,7 @@ You will work in groups to investigate how each artifact can affect image quanti
 * From the "Log" window copy the values of the "total segmented area" and "average intensity" of each channel (green and red)
 * Take some time to analyze the script!
 
-Wait for all the groups to complete the task and summarize results in the shared file. Then discuss:
+Wait for all groups to complete the task and add results in the shared file. Then discuss:
 
 :bulb: How are the measures affected by each artifact?
 
@@ -168,5 +168,5 @@ Wait for all the groups to complete the task and summarize results in the shared
 
 ## 4) Nuclei & Cell Segmentation
 
-The segmentation of nuclei and cells are the starting point of several image analysis tasks in microscopy.
+The segmentation of nuclei and cells are the starting point of several image analysis tasks in microscopy. Let's try 
 
