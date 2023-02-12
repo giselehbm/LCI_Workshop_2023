@@ -1,6 +1,6 @@
 # :microscope: LCI Image Analysis Workshop 2023
 
-Welcome to the image analysis workshop organized by the Live Cell Imaging facility at the Karolinska Institute! During this workshop you will:
+Welcome to the image analysis workshop organized by the Bioimage Informatics facility & the Live Cell Imaging facility! During this workshop you will:
 
 - [x] See typical examples of what can be done with image analysis and the limitations of each example
 - [x] Understand which image artifacts can be corrected by image analysis in some cases but are easier to correct before acquisition, e.g., uneven illumination, noise
@@ -26,20 +26,26 @@ In order to follow-up the examples presented in this workshop, download the code
 
 ## 1) Uneven illumination - how to correct
 
-Uneven illumation can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the centre of the optical axis to the edges). Uneven illumination can cause discontinuities in whole slide images, background bleaching in time-lapse fluorescent images and compromise downstream analysis. 
+Uneven illumation can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the centre of the optical axis to the edges). 
 
-In this workshop we will try two methods to correct such artifacts caused by uneven illumination.
+Uneven illumination can cause discontinuities in whole slide images, background bleaching in time-lapse fluorescent images and compromise downstream analysis. In this workshop we will explore two algorithms that can be used to correct such artifacts.
 * [Rolling-ball](https://imagejdocu.list.lu/gui/process/subtract_background) algorithm
 * [BaSiC](https://github.com/marrlab/BaSiC#imagejfiji-plugin) plugin (click on the link to follow installation instructions)
 
--> Images to be used in this session are located in "../uneven_illumination/tiles/"
+-> Images to be used in this session are located in "../images/illumination_correction/"
 
-Instructions for each group:
+Wait to be assigned to one of the breakout rooms and then follow the instructions corresponding to your group:
 
 **Group 1:** Illumination correction via rolling ball algorithm
 * Open the image of interest
 * Go to "Process->Subtract Background..."
 * Choose the radius of the rolling ball algorithm and press OK
+
+You can repeat these steps for the stitched images and the individual tiles. Try different values of the radius parameter.
+
+:bulb: What happens as the size of radius increases?
+
+:bulb: What happens as the overlapping increases?
 
 **Groups 2 and 3:** Illumination correction via BaSiC plugin
 * Install the BaSiC plugin via Fiji update sites (instructions above)
