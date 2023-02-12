@@ -178,7 +178,7 @@ You can choose to work with your own images, acquired during the LCI Microscopy 
 * Test the different thresholding algorithms in Fiji ("Image->Adjust->Threshold...");
 * Remember that the background subtraction can improve the segmentation results;
 * Pre-processing: you can find several convolution filters in "Process->Filters";
-* If thresholding does not perform well, you can try [StarDist](https://fiji.sc/)
+* If thresholding does not perform well, you can try [StarDist](https://github.com/stardist/stardist-imagej)
 	- Available as a plugin for FIJI. Two trained models: fluorescent nuclei and H&E stained images
 * Advanced: Activate the macro recording function "Plugins->Macros->Record..." in Fiji to save all the functions and plugins that you use. Then try to create your own script!
 
