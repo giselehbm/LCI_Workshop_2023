@@ -41,7 +41,7 @@ Wait to be assigned to one of the breakout rooms and then follow the instruction
 * Go to "Process->Subtract Background..."
 * Choose the radius of the rolling ball algorithm and press OK
 
-You can repeat these steps for the stitched images and the individual tiles. Try different values of the radius parameter.
+You can repeat these steps for the **stitched images**. You can also try to correct individual tiles ("tiles" folder). Try different values of the radius parameter.
 
 :bulb: What happens as the size of radius increases?
 
@@ -49,22 +49,37 @@ You can repeat these steps for the stitched images and the individual tiles. Try
 
 **Groups 2 and 3:** Illumination correction via BaSiC plugin
 * Install the BaSiC plugin via Fiji update sites (instructions above)
-* Open the script "Illumination_Basic.ijm";
-* Updage parameter values in lines 17, 19 and 20
-```
-// choose overlap
-overlap = 1;
-// choose grid size
-grid_size_x = 5;
-grid_size_y = 3;
-```
-* Run the script (the corrected image will be saved in the input folder)
+* Open the script "Illumination_Basic.ijm"
+* Updage parameter values (lines 12 to 15)
+	- For "img2_", set parameters to:
+	```
+	overlap = 1; // choose 1, 5 or 10
+	grid_size_x = 5;
+	grid_size_y = 3;
+	file_name = "img";
+	```
+	- For "WSI_Brain", set parameters to:
+	```
+	overlap = 10;
+	grid_size_x = 9;
+	grid_size_y = 6;
+	file_name = "C3-BrainSection";
+	```
+* Press the "Run buttom". A Dialog window will appear and you should browse the folder named "uncorrected" inside the reference folder.
+	- **Group 2:** run the script for "img2" with different overlap values ("img2_1pc", "img2_5pc" and "img2_10pc")
+	- **Group 3:** run the script for "img2_10pc" and "WSI_Brain"
+
+**Note:** Corrected stitched images are saved inside the reference folder
+
+:bulb: Inspect the results, compare the uncorrected vs corrected images.
 
 **Group 4:** 
 
-Comapre the uncorrected and corrected images and discuss how (*or if*) the corrected image was improved.
+:bulb: Comapre the uncorrected and corrected images and discuss how (*or if*) the corrected image was improved.
 
-Division of group
+:bulb: What happens as the overlapping increases? (Group 2)
+
+:bulb: What happens as the number of tiles increases? (Group 3)
 
 
 ## 2) Handling noise
