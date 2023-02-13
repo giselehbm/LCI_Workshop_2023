@@ -10,8 +10,6 @@ In order to follow-up the examples presented in this workshop, download the code
 
 :bookmark: **Tip**: To open an image in Fiji, go to "File->Open". Then browse the image of interest. If the Bio-Formats plugin interface appears, check the import options and press "OK"
 
-:bookmark: **Tip**: Use the Brightness & Contrast tool to adjust visualization when necessary: "Image->Adjust->Brightness/Contrast...". Then browse the code to be used in each session.
-
 :bookmark: **Tip**: You can open a script in Fiji by dragging and droping a file in the main interface or through "Plugins->Macros->Edit...". Then browse the code to be used in each session.
 
 :people_holding_hands: **Group work**: For each activity you will be radomly assigned to breakout rooms to work in groups. Results should be reported in the following shared document.
