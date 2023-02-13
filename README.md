@@ -1,6 +1,6 @@
 # :microscope: LCI Microscopy Course: Image Analysis Workshop 2023
 
-Welcome to the image analysis workshop organized by the Bioimage Informatics facility & the Live Cell Imaging facility! During this workshop you will:
+Welcome to the image analysis workshop organized by the [Bioimage Informatics facility](https://www.scilifelab.se/units/bioimage-informatics/) & the [Live Cell Imaging facility](https://ki.se/en/bionut/live-cell-imaging-core-facility-lci)! During this workshop you will:
 
 - [x] See typical examples of what can be done with image analysis and the limitations of each example
 - [x] Understand which image artifacts can be corrected by image analysis in some cases but are easier to correct before acquisition, e.g., uneven illumination, noise
@@ -9,6 +9,8 @@ Welcome to the image analysis workshop organized by the Bioimage Informatics fac
 In order to follow-up the examples presented in this workshop, download the code available in this GitHub page (you can do that by clicking on the green buttom above). In addition, you also have to download Fiji from the following [link](https://fiji.sc/). The installation of additional required plugins will be detailed in the next sessions.
 
 :bookmark: **Tip**: To open an image in Fiji, go to "File->Open". Then browse the image of interest. If the Bio-Formats plugin interface appears, check the import options and press "OK"
+
+:bookmark: **Tip**: Use the Brightness & Contrast tool to adjust visualization when necessary: "Image->Adjust->Brightness/Contrast...". Then browse the code to be used in each session.
 
 :bookmark: **Tip**: You can open a script in Fiji by dragging and droping a file in the main interface or through "Plugins->Macros->Edit...". Then browse the code to be used in each session.
 
@@ -37,11 +39,11 @@ Uneven illumination can cause discontinuities in whole slide images, background 
 Wait to be assigned to one of the breakout rooms and then follow the instructions corresponding to your group:
 
 :people_holding_hands: **Group 1:** Illumination correction via rolling ball algorithm
-* Open the image of interest
+* Open an image from the **"stitched"** folder
 * Go to "Process->Subtract Background..."
 * Choose the radius of the rolling ball algorithm and press OK
 
-Repeat these steps for the files in the **"stitched"** folder. You can also try to correct individual tiles ("tiles" folder). Try different values of the radius parameter.
+Repeat these steps for the other files in the **"stitched"** folder. Each file corresponding to a different overlap (1%, 5% and 10%). You can also try to correct individual tiles from the "tiles" folder. Try different values of the radius parameter.
 
 :bulb: What happens as the size of radius increases?
 
@@ -65,7 +67,7 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 	grid_size_y = 6;
 	file_name = "C3-BrainSection";
 	```
-* Press the "Run button". A Dialog window will appear and you should browse the folder named "uncorrected" inside the reference folder ("../images/illumination_correction/tiles/...").
+* Press the "Run button". A Dialog window will appear and you should browse the folder named "uncorrected" inside the reference folder (e.g. "../images/illumination_correction/tiles/img2_1pc/uncorrected/").
 	- **Group 2:** run the script for "img2" with different overlap values ("img2_1pc", "img2_5pc" and "img2_10pc")
 	- **Group 3:** run the script for "img2_10pc" and "WSI_Brain"
 
@@ -80,7 +82,7 @@ Repeat these steps for the files in the **"stitched"** folder. You can also try 
 :people_holding_hands: **Group 4:** Uneven focus on z-stacks
 * Open the image of interest in Fiji (from folder "../images/illumination_correction/uneven_focus/");
 * Inspect the z-stack. What is wrong?
-* Create a copy of the reference stack ("Image->Duplicate")
+* Create a copy of the reference stack ("Image->Duplicate", remember to select the "Duplicate stack" option)
 * Segment via thresholding ("Image->Adjust->Threshold..."). Keep the resulting segmented stack.
 * Select the original stack and apply a maximum intensity projection (MIP), via "Image->Stacks->Z project..."
 * Create two copies of the projected image. 
@@ -99,7 +101,7 @@ Microscopic images may be affected by different types of noise: dark noise from 
 
 Each group should take a specific reference image and generate the output measures using the script "Noise.ijm" script.
 
-:arrow_right: Images to be used in this session are located in "../images/noise/"
+:arrow_right: Images to be used in this session are located in "../images/noise/". When processing the "Tissue_" images, split the channels and select the DAPI channel before running the script ("Image->Color->Split Channels").
 
 :people_holding_hands: Group assignment:
 * Group 1: images "Nuclei_no_avg.nd2" and "Tissue_no_avg.nd2"
@@ -148,7 +150,7 @@ You will work in groups to investigate how each artifact can affect image quanti
 :arrow_right: Images to be used in this session are located in "../images/image_artifacts/"
 
 :people_holding_hands: Group assignment:
-* Group 1: image "../images/image_artifacts/seq_no_sat.nd2"
+* Group 1: image "../images/image_artifacts/sequential.nd2"
 * Group 2: image "../images/image_artifacts/simultaneous.nd2"
 * Group 3: image "../images/image_artifacts/seq_saturated.nd2"
 * Group 4: image "../images/image_artifacts/seq_undexposed.nd2"
