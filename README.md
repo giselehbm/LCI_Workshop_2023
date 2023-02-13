@@ -1,6 +1,6 @@
 # :microscope: LCI Microscopy Course: Image Analysis Workshop 2023
 
-Welcome to the image analysis workshop organized by the [Bioimage Informatics facility](https://www.scilifelab.se/units/bioimage-informatics/) & the [Live Cell Imaging facility](https://ki.se/en/bionut/live-cell-imaging-core-facility-lci)! During this workshop you will:
+Welcome to the image analysis workshop organized by the [Bioimage Informatics facility](https://www.scilifelab.se/units/bioimage-informatics/) & the [Live Cell Imaging facility](https://ki.se/en/bionut/live-cell-imaging-core-facility-lci) for the LCI Microscopy course 2023! During this workshop you will:
 
 - [x] See typical examples of what can be done with image analysis and the limitations of each example
 - [x] Understand which image artifacts can be corrected by image analysis in some cases but are easier to correct before acquisition, e.g., uneven illumination, noise
