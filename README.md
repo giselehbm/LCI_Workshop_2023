@@ -12,7 +12,7 @@ In order to follow-up the examples presented in this workshop, download the code
 
 :bookmark: **Tip**: You can open a script in Fiji by dragging and droping a file in the main interface or through "Plugins->Macros->Edit...". Then browse the code to be used in each session.
 
-:people_holding_hands: **Group work**: For each activity you will be radomly assigned to breakout rooms to work in groups. Results should be reported in the following shared document.
+:people_holding_hands: **Group work**: For each activity you will be radomly assigned to breakout rooms to work in groups. Results should be reported in the shared document (link to be sent during workshop).
 
 ## :alarm_clock: Schedule
 
@@ -29,7 +29,7 @@ In order to follow-up the examples presented in this workshop, download the code
 Uneven illumination can be due to different factors, e.g., microscope settings; sample artifacts (samples that are not flat); shading or vignetting (attenuation of the pixel intensity from the center of the optical axis to the edges). 
 
 Uneven illumination can cause discontinuities in whole slide images, background bleaching in time-lapse fluorescent images and compromise downstream analysis. In this workshop we will explore two algorithms that can be used to correct such artifacts.
-* [Rolling-ball](https://imagejdocu.list.lu/gui/process/subtract_background) algorithm
+* [Rolling-ball](https://imagej.net/plugins/rolling-ball-background-subtraction) algorithm
 * [BaSiC](https://github.com/marrlab/BaSiC#imagejfiji-plugin) plugin (click on the link to follow installation instructions)
 
 :arrow_right: Images to be used in this session are located in "../images/illumination_correction/"
