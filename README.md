@@ -185,4 +185,7 @@ You can choose to work with your own images, acquired during the LCI Microscopy 
 
 ## 4) Acknowledgments
 
-
+* :microscope: **Image Acquisition** *by Gabriela Imreh*
+* :thought_balloon: **Proposal & Design** *by Gisele Miranda & Sylvie Le Guyader*
+* :hammer_and_wrench: **Implementation** *by Gisele Miranda*
+* :clapper: **Implementation** *by Gisele Miranda*
