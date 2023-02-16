@@ -38,6 +38,7 @@ Wait to be assigned to one of the breakout rooms and then follow the instruction
 
 :people_holding_hands: **Group 1:** Illumination correction via rolling ball algorithm
 * Open an image from the **"stitched"** folder
+* Create a copy of the original image ("Image->Duplicate...")
 * Go to "Process->Subtract Background..."
 * Choose the radius of the rolling ball algorithm and press OK
 
