@@ -183,7 +183,7 @@ You can choose to work with your own images, acquired during the LCI Microscopy 
 	- Available as a plugin for FIJI. Two trained models: fluorescent nuclei and H&E stained images
 * Activate the macro recording function "Plugins->Macros->Record..." in Fiji to save all the functions and plugins that you use. Then try to create your own script!
 
-## Credits
+## Acknowledgements
 
 * :microscope: **Image Acquisition** *by Gabriela Imreh*
 * :thought_balloon: **Proposal & Design** *by Gisele Miranda & Sylvie Le Guyader*
