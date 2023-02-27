@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # :microscope: LCI Microscopy Course: Image Analysis Workshop 2023
 
 Welcome to the image analysis workshop organized by the [Bioimage Informatics facility](https://www.scilifelab.se/units/bioimage-informatics/) & the [Live Cell Imaging facility](https://ki.se/en/bionut/live-cell-imaging-core-facility-lci) for the LCI Microscopy course 2023! During this workshop you will:
